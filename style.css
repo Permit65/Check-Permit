@@ -1,43 +1,10 @@
-body { margin: 0; font-family: 'Arial', sans-serif; }
-.main-bg { 
-    background: linear-gradient(to bottom, #f39c12, #e67e22); 
-    min-height: 100vh; text-align: center; padding: 20px; color: white;
-}
-.sub-text { font-size: 14px; margin-bottom: 20px; opacity: 0.9; }
+<h3 id="resName"></h3>
+            <p><strong>Country:</strong> <span id="resCountryDisplay"></span></p>
+            <p><strong>Status:</strong> <span id="resStatus"></span></p>
+            <a id="resLink" href="#" target="_blank" class="download-btn">View/Download PDF</a>
+        </div>
+    </div>
 
-.country-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns like your image */
-    gap: 8px; max-width: 600px; margin: 0 auto 30px;
-}
-
-.country-item {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 6px; padding: 5px; cursor: pointer; transition: 0.2s;
-}
-
-.country-item:hover, .country-item.active {
-    background: white; border: 2px solid #27ae60;
-}
-
-.country-item img { width: 100%; border-radius: 3px; display: block; }
-.country-item span { font-size: 10px; display: block; margin-top: 4px; color: white; }
-.country-item.active span { color: black; }
-
-.search-section { max-width: 400px; margin: 0 auto; }
-input[type="text"] { 
-    width: 100%; padding: 12px; border-radius: 25px; border: none; margin-bottom: 10px;
-}
-button { 
-    width: 100%; padding: 12px; border-radius: 25px; border: none; 
-    background: #27ae60; color: white; font-weight: bold; cursor: pointer;
-}
-
-.result-box { 
-    margin-top: 20px; background: white; color: black; padding: 20px; border-radius: 10px; 
-}
-
-@media (max-width: 480px) {
-    .country-grid { grid-template-columns: repeat(4, 1fr); }
-}
+    <script src="script.js"></script>
+</body>
+</html>
