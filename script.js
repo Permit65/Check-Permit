@@ -4,8 +4,8 @@ function checkData() {
 
     // DATABASE - Eikhane apni notun passport add korben
     const data = {
-        "SERBIA001": { name: "Abdur Rahim", country: "Serbia 🇷🇸", status: "Approved", link: "https://drive.google.com/file/d/1QbZWRrGjUFB0CzvyjiH6wDqq8J-p9OYt/view?usp=drive_link" },
-        "SERBIA002": { name: "Karim Uddin", country: "Serbia 🇷🇸", status: "Approved", link: "https://drive.google.com/your-pdf-link-2" },
+        "SERBIA001": { name: "Abdur Rahim", country: "Serbia 🇷🇸", status: "Approved", link: "" },
+        "SERBIA002": { name: "Karim Uddin", country: "Serbia 🇷🇸", status: "Approved", link: "https://drive.google.com/file/d/1f9L7_AnuNJpDsYRxvJ5sbmK2_KMUDBw9/view?usp=sharing" },
         "MAL8877": { name: "Sumon Ali", country: "Malaysia 🇲🇾", status: "Approved", link: "https://link-to-pdf.com" }
     };
 
