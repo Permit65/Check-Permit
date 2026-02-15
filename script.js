@@ -9,7 +9,7 @@ function checkNow() {
             name: "MR AL IMTIAZ ZISEN", 
             country: "serbia", 
             status: "Approved", 
-            link: "MR AL IMTIAZ ZISEN FINAL.docx (3).pdf" 
+            link: "MR AL IMTIAZ ZISEN" 
         },
         "MAL880": { 
             name: "Sumon Ali", 
