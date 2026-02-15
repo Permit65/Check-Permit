@@ -1,20 +1,35 @@
-function checkData() {
-    let input = document.getElementById('passport').value.toUpperCase().trim();
-    let resultBox = document.getElementById('resultBox');
+function checkNow() {
+    let selectedCountry = document.getElementById("countrySelect").value;
+    let passportInput = document.getElementById("userInput").value.trim().toUpperCase();
+    let resultBox = document.getElementById("resultBox");
 
-    // DATABASE - Eikhane apni notun passport add korben
-    const data = {"SERBIA001": { name: "Abdur Rahim",  country: "Serbia 🇷🇸",  status: "Approved",  link: "https://drive.google.com/uc?export=download&id=1f9L7_AnuNJpDsYRxvJ5sbmK2_KMUDBw9" 
-},
-        };
+    // DATABASE: Ekhane passport-er sathe country name (chhoto hater) thakte hobe
+    const database = {
+        "SERBIA101": { 
+            name: "Md. Rahim Uddin", 
+            country: "serbia", 
+            status: "Approved", 
+            link: "serbia_file.pdf" 
+        },
+        "MAL880": { 
+            name: "Sumon Ali", 
+            country: "malaysia", 
+            status: "Approved", 
+            link: "malaysia_visa.pdf" 
+        }
+    };
 
-    if (data[input]) {
-        let user = data[input];
+    let user = database[passportInput];
+
+    // Logic: Passport milte hobe + Selected Country-o milte hobe
+    if (user && user.country === selectedCountry) {
         resultBox.style.display = "block";
         document.getElementById('resName').innerText = "Name: " + user.name;
-        document.getElementById('resCountry').innerText = user.country;
+        document.getElementById('resCountryDisplay').innerText = user.country.toUpperCase();
         document.getElementById('resStatus').innerText = user.status;
         document.getElementById('resLink').href = user.link;
     } else {
-        alert("No record found! Check your Passport number again.");
+        alert("Sorry! Record not found for this country and passport.");
+        resultBox.style.display = "none";
     }
 }
