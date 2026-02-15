@@ -9,10 +9,7 @@ function checkData() {
     status: "Approved", 
     link: "https://drive.google.com/file/d/1f9L7_AnuNJpDsYRxvJ5sbmK2_KMUDBw9/view?usp=sharing" 
 },
-        "SERBIA001": { name: "Abdur Rahim", country: "Serbia 🇷🇸", status: "Approved", link: "" },
-        "SERBIA002": { name: "Karim Uddin", country: "Serbia 🇷🇸", status: "Approved", link: "https://drive.google.com/file/d/1f9L7_AnuNJpDsYRxvJ5sbmK2_KMUDBw9/view?usp=sharing" },
-        "MAL8877": { name: "Sumon Ali", country: "Malaysia 🇲🇾", status: "Approved", link: "https://link-to-pdf.com" }
-    };
+        };
 
     if (data[input]) {
         let user = data[input];
