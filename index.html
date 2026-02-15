@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Permit Checker</title>
+    <title>Global Permit & Visa Checker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="header">
-        <h1>Global Permit Status</h1>
-        <p>Check your visa/permit status instantly</p>
+        <h1>Global Visa & Permit Status</h1>
+        <p>Official Verification System for 50+ Countries</p>
     </div>
+
     <div class="container">
-        <label>Select Country:</label>
-        <select id="country">
+        <label>Select Your Country:</label>
+        <select id="countrySelect">
+            <option value="">-- Choose Country --</option>
+            
             <option value="serbia">Serbia 🇷🇸</option>
-            <option value="malaysia">Malaysia 🇲🇾</option>
-            <option value="saudi">Saudi Arabia 🇸🇦</option>
-            <option value="uae">UAE 🇦🇪</option>
-            <option value="qatar">Qatar 🇶🇦</option>
-            <option value="kuwait">Kuwait 🇰🇼</option>
-            <option value="oman">Oman 🇴🇲</option>
-            <option value="bahrain">Bahrain 🇧🇭</option>
-            <option value="singapore">Singapore 🇸🇬</option>
             <option value="italy">Italy 🇮🇹</option>
             <option value="portugal">Portugal 🇵🇹</option>
             <option value="romania">Romania 🇷🇴</option>
-            <option value="malta">Malta 🇲🇹</option>
             <option value="poland">Poland 🇵🇱</option>
+            <option value="malta">Malta 🇲🇹</option>
             <option value="croatia">Croatia 🇭🇷</option>
             <option value="greece">Greece 🇬🇷</option>
             <option value="france">France 🇫🇷</option>
             <option value="germany">Germany 🇩🇪</option>
-            <option value="uk">United Kingdom 🇬🇧</option>
-            <option value="usa">USA 🇺🇸</option>
-            <option value="canada">Canada 🇨🇦</option>
-            <option value="australia">Australia 🇦🇺</option>
+            <option value="spain">Spain 🇪🇸</option>
+            <option value="hungary">Hungary 🇭🇺</option>
+            <option value="lithuania">Lithuania 🇱🇹</option>
+            <option value="moldova">Moldova 🇲🇩</option>
+            <option value="finland">Finland 🇫🇮</option>
+
+            <option value="saudi">Saudi Arabia 🇸🇦</option>
+            <option value="uae">UAE (Dubai) 🇦🇪</option>
+            <option value="qatar">Qatar 🇶🇦</option>
+            <option value="kuwait">Kuwait 🇰🇼</option>
+            <option value="oman">Oman 🇴🇲</option>
+            <option value="bahrain">Bahrain 🇧🇭</option>
+            <option value="jordan">Jordan 🇯🇴</option>
+            <option value="lebanon">Lebanon 🇱🇧</option>
+
+            <option value="malaysia">Malaysia 🇲🇾</option>
+            <option value="singapore">Singapore 🇸🇬</option>
             <option value="japan">Japan 🇯🇵</option>
             <option value="southkorea">South Korea 🇰🇷</option>
             <option value="brunei">Brunei 🇧🇳</option>
+            <option value="maldives">Maldives 🇲🇻</option>
+            <option value="thailand">Thailand 🇹🇭</option>
+            <option value="vietnam">Vietnam 🇻🇳</option>
+            <option value="cambodia">Cambodia 🇰🇭</option>
+            <option value="cyprus">Cyprus 🇨🇾</option>
+
+            <option value="usa">USA 🇺🇸</option>
+            <option value="canada">Canada 🇨🇦</option>
+            <option value="uk">United Kingdom 🇬🇧</option>
+            <option value="australia">Australia 🇦🇺</option>
+            <option value="newzealand">New Zealand 🇳🇿</option>
+            <option value="brazil">Brazil 🇧🇷</option>
+            <option value="argentina">Argentina 🇦🇷</option>
+            <option value="mexico">Mexico 🇲🇽</option>
+            
+            <option value="egypt">Egypt 🇪🇬</option>
+            <option value="southafrica">South Africa 🇿🇦</option>
+            <option value="mauritius">Mauritius 🇲🇺</option>
+            <option value="morocco">Morocco 🇲🇦</option>
+            <option value="turkey">Turkey 🇹🇷</option>
+            <option value="russia">Russia 🇷🇺</option>
+            <option value="georgia">Georgia 🇬🇪</option>
+            <option value="uzbekistan">Uzbekistan 🇺🇿</option>
+            <option value="kazakhstan">Kazakhstan 🇰🇿</option>
+            <option value="azerbaijan">Azerbaijan 🇦🇿</option>
         </select>
-        <label>Enter Passport / Code:</label>
-        <input type="text" id="passport" placeholder="Example: P1234567">
-        <button onclick="checkData()">Check Now</button>
-        <div id="resultBox" class="result" style="display:none;">
+
+        <label>Passport Number / Application Code:</label>
+        <input type="text" id="userInput" placeholder="Enter Your Code...">
+        
+        <button onclick="checkNow()">Check Status Now</button>
+
+        <div id="resultBox" class="result-area" style="display: none;"> 
             <h3 id="resName"></h3>
-            <p><strong>Country:</strong> <span id="resCountry"></span></p>
+            <p><strong>Country:</strong> <span id="resCountryDisplay"></span></p>
             <p><strong>Status:</strong> <span id="resStatus"></span></p>
-            <a id="resLink" href="#" target="_blank" class="download-btn">Download PDF</a>
+            <a id="resLink" href="#" target="_blank" class="download-btn">View/Download PDF</a>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
