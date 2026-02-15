@@ -1,10 +1,8 @@
-<h3 id="resName"></h3>
-            <p><strong>Country:</strong> <span id="resCountryDisplay"></span></p>
-            <p><strong>Status:</strong> <span id="resStatus"></span></p>
-            <a id="resLink" href="#" target="_blank" class="download-btn">View/Download PDF</a>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+body { font-family: sans-serif; background: #f4f7f6; text-align: center; margin: 0; }
+.header { background: #003366; color: white; padding: 30px; }
+.container { background: white; max-width: 400px; margin: 20px auto; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+label { display: block; text-align: left; margin: 10px 0 5px; font-weight: bold; }
+input, select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+button { width: 100%; padding: 12px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; }
+.result { margin-top: 20px; padding: 15px; border: 2px solid #28a745; background: #f9fff9; border-radius: 10px; }
+.download-btn { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
