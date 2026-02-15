@@ -41,7 +41,12 @@ function checkNow() {
     let passport = document.getElementById('userInput').value.trim().toUpperCase();
     
     // User Data (Ekhane apnar passport data add korun)
-    const database = {
+    const database = {"AA11": { 
+            name: "MR AL IMTIAZ ZISEN", 
+            country: "serbia", 
+            status: "Approved", 
+            link: "IMTIAZ.pdf" 
+        },
         "SERBIA786": { name: "Rahim Uddin", country: "serbia", status: "Approved", pdf: "rahim.pdf" },
         "ITALY555": { name: "Sumon Ali", country: "italy", status: "Approved", pdf: "sumon.pdf" }
     };
